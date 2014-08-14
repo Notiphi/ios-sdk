@@ -100,7 +100,9 @@ To the method
 (NSDictionary *)launchOptions
 ```
 
-In your app delegate. You should also register for Push notification with Apple's APNS server 
+In your app delegate. 
+
+You should also register for Push notification with Apple's APNS server 
 ```
 [[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound)];
 ```
