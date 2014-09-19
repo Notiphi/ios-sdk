@@ -151,7 +151,7 @@ to the method
 -(void) application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
 ```
 
-####7. IOS7 ONLY: Add
+####7. Add
 ```
     [[NotifyManager sharedManager] processRemoteNotification:userInfo];
     completionHandler(UIBackgroundFetchResultNewData);
@@ -164,7 +164,25 @@ fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler
 
 ```
 
+###Sending Events Using Notiphi Library
+If you need to send us some events then you would need to do the additional steps as shown below.
 
+```
+    NSDictionary *dict1 = @{@"Event-Name" : @"Event-Value"};
+    NSDictionary *dict2 = @{@"IDSync" : @"ABC1234"};
+
+    NSArray * arrayOfDicts = @[dict1,dict2];
+    if ([NSJSONSerialization isValidJSONObject:arrayOfDicts])  //can it converted to valid json.
+    {
+        NSError *error;
+        NSData *json = [NSJSONSerialization dataWithJSONObject:arrayOfDicts options:0 error:&error];
+        NSString *jsonString = [[NSString alloc] initWithData:json encoding:NSUTF8StringEncoding];
+        [[NotifyManager sharedManager] sendEventsWithJSONString:jsonString];
+
+    }
+
+
+```
 
 
 ### Send us your Push certificate for testing
