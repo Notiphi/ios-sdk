@@ -27,9 +27,14 @@
     [[NotifyManager sharedManager] processLaunchOptions:launchOptions];
     [[NotifyManager sharedManager] startNotifyServicesWithAppID:@"demopro" key:@"PNNe5wL2ANnD6pVUysJk"];
 
-    [[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeAlert |
-      UIRemoteNotificationTypeBadge |
-      UIRemoteNotificationTypeSound)];
+    if ([[UIApplication sharedApplication] respondsToSelector:@selector(registerUserNotificationSettings:)])
+    {
+        UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:(UIUserNotificationTypeBadge | UIUserNotificationTypeSound | UIUserNotificationTypeAlert) categories:nil];
+        [[UIApplication sharedApplication] registerUserNotificationSettings:settings];        
+    } else
+    {
+        [[UIApplication sharedApplication] registerForRemoteNotificationTypes: (UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert)];
+    }
 
     return YES;
 }
@@ -68,6 +73,10 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+- (void) application:(UIApplication *)application didRegisterUserNotificationSettings:(UIUserNotificationSettings *)notificationSettings
+{
+    [application registerForRemoteNotifications];
+}
 
 -(void) application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification{
     //Check whether the local notification was made by notify
