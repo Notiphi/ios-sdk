@@ -21,7 +21,7 @@
 		F1861883167F4164003CE49E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F1861881167F4164003CE49E /* InfoPlist.strings */; };
 		F1861886167F4164003CE49E /* NotifySampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F1861885167F4164003CE49E /* NotifySampleTests.m */; };
 		F186189D167F42E7003CE49E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F186189C167F42E7003CE49E /* CoreLocation.framework */; };
-		F29C8FCD1AA5F7E7007E8A1F /* libNotifyManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F29C8FCC1AA5F7E7007E8A1F /* libNotifyManager.a */; };
+		F209FC2A1AA60CE500FD21D2 /* libNotifyManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F209FC291AA60CE500FD21D2 /* libNotifyManager.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,19 +50,19 @@
 		F186186C167F4164003CE49E /* NCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NCViewController.h; sourceTree = "<group>"; };
 		F186186D167F4164003CE49E /* NCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NCViewController.m; sourceTree = "<group>"; };
 		F1861870167F4164003CE49E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/NCViewController.xib; sourceTree = "<group>"; };
-		F1861877167F4164003CE49E /* NotifySampleTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotifySampleTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1861877167F4164003CE49E /* NotifySampleTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = NotifySampleTests.octest; path = NotifySampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1861880167F4164003CE49E /* NotifySampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NotifySampleTests-Info.plist"; sourceTree = "<group>"; };
 		F1861882167F4164003CE49E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F1861884167F4164003CE49E /* NotifySampleTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotifySampleTests.h; sourceTree = "<group>"; };
 		F1861885167F4164003CE49E /* NotifySampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotifySampleTests.m; sourceTree = "<group>"; };
 		F186189C167F42E7003CE49E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		F29C8FC61AA5F7E7007E8A1F /* Base64Transcoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64Transcoder.h; sourceTree = "<group>"; };
-		F29C8FC71AA5F7E7007E8A1F /* Notify_OpenUDID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Notify_OpenUDID.h; sourceTree = "<group>"; };
-		F29C8FC81AA5F7E7007E8A1F /* NotifyCoreLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotifyCoreLocationManager.h; sourceTree = "<group>"; };
-		F29C8FC91AA5F7E7007E8A1F /* NotifyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotifyManager.h; sourceTree = "<group>"; };
-		F29C8FCA1AA5F7E7007E8A1F /* NotifyRegionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotifyRegionManager.h; sourceTree = "<group>"; };
-		F29C8FCB1AA5F7E7007E8A1F /* NotifyServiceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotifyServiceManager.h; sourceTree = "<group>"; };
-		F29C8FCC1AA5F7E7007E8A1F /* libNotifyManager.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libNotifyManager.a; sourceTree = "<group>"; };
+		F209FC231AA60CE500FD21D2 /* Base64Transcoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64Transcoder.h; sourceTree = "<group>"; };
+		F209FC241AA60CE500FD21D2 /* Notify_OpenUDID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Notify_OpenUDID.h; sourceTree = "<group>"; };
+		F209FC251AA60CE500FD21D2 /* NotifyCoreLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotifyCoreLocationManager.h; sourceTree = "<group>"; };
+		F209FC261AA60CE500FD21D2 /* NotifyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotifyManager.h; sourceTree = "<group>"; };
+		F209FC271AA60CE500FD21D2 /* NotifyRegionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotifyRegionManager.h; sourceTree = "<group>"; };
+		F209FC281AA60CE500FD21D2 /* NotifyServiceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotifyServiceManager.h; sourceTree = "<group>"; };
+		F209FC291AA60CE500FD21D2 /* libNotifyManager.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libNotifyManager.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +73,7 @@
 				F186189D167F42E7003CE49E /* CoreLocation.framework in Frameworks */,
 				F186185B167F4164003CE49E /* UIKit.framework in Frameworks */,
 				F186185D167F4164003CE49E /* Foundation.framework in Frameworks */,
-				F29C8FCD1AA5F7E7007E8A1F /* libNotifyManager.a in Frameworks */,
+				F209FC2A1AA60CE500FD21D2 /* libNotifyManager.a in Frameworks */,
 				F186185F167F4164003CE49E /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -93,8 +93,8 @@
 		F186184B167F4164003CE49E = {
 			isa = PBXGroup;
 			children = (
-				F29C8FC41AA5F7E7007E8A1F /* include */,
-				F29C8FCC1AA5F7E7007E8A1F /* libNotifyManager.a */,
+				F209FC211AA60CE500FD21D2 /* include */,
+				F209FC291AA60CE500FD21D2 /* libNotifyManager.a */,
 				F14826941714166900D77C06 /* Default-568h@2x.png */,
 				F186189C167F42E7003CE49E /* CoreLocation.framework */,
 				F1861860167F4164003CE49E /* NotifySample */,
@@ -167,23 +167,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		F29C8FC41AA5F7E7007E8A1F /* include */ = {
+		F209FC211AA60CE500FD21D2 /* include */ = {
 			isa = PBXGroup;
 			children = (
-				F29C8FC51AA5F7E7007E8A1F /* NotifyManager */,
+				F209FC221AA60CE500FD21D2 /* NotifyManager */,
 			);
 			path = include;
 			sourceTree = "<group>";
 		};
-		F29C8FC51AA5F7E7007E8A1F /* NotifyManager */ = {
+		F209FC221AA60CE500FD21D2 /* NotifyManager */ = {
 			isa = PBXGroup;
 			children = (
-				F29C8FC61AA5F7E7007E8A1F /* Base64Transcoder.h */,
-				F29C8FC71AA5F7E7007E8A1F /* Notify_OpenUDID.h */,
-				F29C8FC81AA5F7E7007E8A1F /* NotifyCoreLocationManager.h */,
-				F29C8FC91AA5F7E7007E8A1F /* NotifyManager.h */,
-				F29C8FCA1AA5F7E7007E8A1F /* NotifyRegionManager.h */,
-				F29C8FCB1AA5F7E7007E8A1F /* NotifyServiceManager.h */,
+				F209FC231AA60CE500FD21D2 /* Base64Transcoder.h */,
+				F209FC241AA60CE500FD21D2 /* Notify_OpenUDID.h */,
+				F209FC251AA60CE500FD21D2 /* NotifyCoreLocationManager.h */,
+				F209FC261AA60CE500FD21D2 /* NotifyManager.h */,
+				F209FC271AA60CE500FD21D2 /* NotifyRegionManager.h */,
+				F209FC281AA60CE500FD21D2 /* NotifyServiceManager.h */,
 			);
 			path = NotifyManager;
 			sourceTree = "<group>";
