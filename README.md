@@ -84,7 +84,7 @@ You would also need to add the following key 'NSLocationAlwaysUsageDescription' 
 
 ```
     <key>NSLocationAlwaysUsageDescription</key>
-	  <string>Let us know where you are</string>
+    <string>Let us know where you are</string>
 ```
 	  
 Once the permissions are set, we can change the code as shown below.
