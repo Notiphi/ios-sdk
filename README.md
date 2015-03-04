@@ -80,6 +80,13 @@ You would also need to add the following device capability in the info plist fil
   </array>
 ```
 
+You would also need to add the following key 'NSLocationAlwaysUsageDescription' and a description string in the info plist file
+
+```
+    <key>NSLocationAlwaysUsageDescription</key>
+	  <string>Let us know where you are</string>
+```
+	  
 Once the permissions are set, we can change the code as shown below.
 ###Using Notiphi Library
 
@@ -169,8 +176,6 @@ to the method
 fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler
 
 ```
-
-
 
 
 ### Send us your Push certificate for testing
