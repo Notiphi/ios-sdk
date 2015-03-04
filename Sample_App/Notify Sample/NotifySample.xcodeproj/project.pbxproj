@@ -21,7 +21,7 @@
 		F1861883167F4164003CE49E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F1861881167F4164003CE49E /* InfoPlist.strings */; };
 		F1861886167F4164003CE49E /* NotifySampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F1861885167F4164003CE49E /* NotifySampleTests.m */; };
 		F186189D167F42E7003CE49E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F186189C167F42E7003CE49E /* CoreLocation.framework */; };
-		F209FC2A1AA60CE500FD21D2 /* libNotifyManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F209FC291AA60CE500FD21D2 /* libNotifyManager.a */; };
+		F250FD201AA6EA5C00F02B71 /* libNotifyManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F250FD1F1AA6EA5C00F02B71 /* libNotifyManager.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,19 +50,19 @@
 		F186186C167F4164003CE49E /* NCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NCViewController.h; sourceTree = "<group>"; };
 		F186186D167F4164003CE49E /* NCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NCViewController.m; sourceTree = "<group>"; };
 		F1861870167F4164003CE49E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/NCViewController.xib; sourceTree = "<group>"; };
-		F1861877167F4164003CE49E /* NotifySampleTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = NotifySampleTests.octest; path = NotifySampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1861877167F4164003CE49E /* NotifySampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotifySampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1861880167F4164003CE49E /* NotifySampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NotifySampleTests-Info.plist"; sourceTree = "<group>"; };
 		F1861882167F4164003CE49E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F1861884167F4164003CE49E /* NotifySampleTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotifySampleTests.h; sourceTree = "<group>"; };
 		F1861885167F4164003CE49E /* NotifySampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotifySampleTests.m; sourceTree = "<group>"; };
 		F186189C167F42E7003CE49E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		F209FC231AA60CE500FD21D2 /* Base64Transcoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64Transcoder.h; sourceTree = "<group>"; };
-		F209FC241AA60CE500FD21D2 /* Notify_OpenUDID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Notify_OpenUDID.h; sourceTree = "<group>"; };
-		F209FC251AA60CE500FD21D2 /* NotifyCoreLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotifyCoreLocationManager.h; sourceTree = "<group>"; };
-		F209FC261AA60CE500FD21D2 /* NotifyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotifyManager.h; sourceTree = "<group>"; };
-		F209FC271AA60CE500FD21D2 /* NotifyRegionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotifyRegionManager.h; sourceTree = "<group>"; };
-		F209FC281AA60CE500FD21D2 /* NotifyServiceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotifyServiceManager.h; sourceTree = "<group>"; };
-		F209FC291AA60CE500FD21D2 /* libNotifyManager.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libNotifyManager.a; sourceTree = "<group>"; };
+		F250FD191AA6EA5C00F02B71 /* Base64Transcoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64Transcoder.h; sourceTree = "<group>"; };
+		F250FD1A1AA6EA5C00F02B71 /* Notify_OpenUDID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Notify_OpenUDID.h; sourceTree = "<group>"; };
+		F250FD1B1AA6EA5C00F02B71 /* NotifyCoreLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotifyCoreLocationManager.h; sourceTree = "<group>"; };
+		F250FD1C1AA6EA5C00F02B71 /* NotifyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotifyManager.h; sourceTree = "<group>"; };
+		F250FD1D1AA6EA5C00F02B71 /* NotifyRegionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotifyRegionManager.h; sourceTree = "<group>"; };
+		F250FD1E1AA6EA5C00F02B71 /* NotifyServiceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotifyServiceManager.h; sourceTree = "<group>"; };
+		F250FD1F1AA6EA5C00F02B71 /* libNotifyManager.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libNotifyManager.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +73,7 @@
 				F186189D167F42E7003CE49E /* CoreLocation.framework in Frameworks */,
 				F186185B167F4164003CE49E /* UIKit.framework in Frameworks */,
 				F186185D167F4164003CE49E /* Foundation.framework in Frameworks */,
-				F209FC2A1AA60CE500FD21D2 /* libNotifyManager.a in Frameworks */,
+				F250FD201AA6EA5C00F02B71 /* libNotifyManager.a in Frameworks */,
 				F186185F167F4164003CE49E /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -93,8 +93,8 @@
 		F186184B167F4164003CE49E = {
 			isa = PBXGroup;
 			children = (
-				F209FC211AA60CE500FD21D2 /* include */,
-				F209FC291AA60CE500FD21D2 /* libNotifyManager.a */,
+				F250FD171AA6EA5C00F02B71 /* include */,
+				F250FD1F1AA6EA5C00F02B71 /* libNotifyManager.a */,
 				F14826941714166900D77C06 /* Default-568h@2x.png */,
 				F186189C167F42E7003CE49E /* CoreLocation.framework */,
 				F1861860167F4164003CE49E /* NotifySample */,
@@ -108,7 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				F1861856167F4164003CE49E /* NotifySample.app */,
-				F1861877167F4164003CE49E /* NotifySampleTests.octest */,
+				F1861877167F4164003CE49E /* NotifySampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -167,23 +167,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		F209FC211AA60CE500FD21D2 /* include */ = {
+		F250FD171AA6EA5C00F02B71 /* include */ = {
 			isa = PBXGroup;
 			children = (
-				F209FC221AA60CE500FD21D2 /* NotifyManager */,
+				F250FD181AA6EA5C00F02B71 /* NotifyManager */,
 			);
 			path = include;
 			sourceTree = "<group>";
 		};
-		F209FC221AA60CE500FD21D2 /* NotifyManager */ = {
+		F250FD181AA6EA5C00F02B71 /* NotifyManager */ = {
 			isa = PBXGroup;
 			children = (
-				F209FC231AA60CE500FD21D2 /* Base64Transcoder.h */,
-				F209FC241AA60CE500FD21D2 /* Notify_OpenUDID.h */,
-				F209FC251AA60CE500FD21D2 /* NotifyCoreLocationManager.h */,
-				F209FC261AA60CE500FD21D2 /* NotifyManager.h */,
-				F209FC271AA60CE500FD21D2 /* NotifyRegionManager.h */,
-				F209FC281AA60CE500FD21D2 /* NotifyServiceManager.h */,
+				F250FD191AA6EA5C00F02B71 /* Base64Transcoder.h */,
+				F250FD1A1AA6EA5C00F02B71 /* Notify_OpenUDID.h */,
+				F250FD1B1AA6EA5C00F02B71 /* NotifyCoreLocationManager.h */,
+				F250FD1C1AA6EA5C00F02B71 /* NotifyManager.h */,
+				F250FD1D1AA6EA5C00F02B71 /* NotifyRegionManager.h */,
+				F250FD1E1AA6EA5C00F02B71 /* NotifyServiceManager.h */,
 			);
 			path = NotifyManager;
 			sourceTree = "<group>";
@@ -225,7 +225,7 @@
 			);
 			name = NotifySampleTests;
 			productName = NotifySampleTests;
-			productReference = F1861877167F4164003CE49E /* NotifySampleTests.octest */;
+			productReference = F1861877167F4164003CE49E /* NotifySampleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
