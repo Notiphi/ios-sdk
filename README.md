@@ -80,6 +80,13 @@ You would also need to add the following device capability in the info plist fil
   </array>
 ```
 
+You would also need to add the following key 'NSLocationAlwaysUsageDescription' and a description string in the info plist file
+
+```
+    <key>NSLocationAlwaysUsageDescription</key>
+    <string>Let us know where you are</string>
+```
+	  
 Once the permissions are set, we can change the code as shown below.
 ###Using Notiphi Library
 
@@ -104,7 +111,16 @@ In your app delegate.
 
 You should also register for Push notification with Apple's APNS server 
 ```
-[[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound)];
+if ([[UIApplication sharedApplication] respondsToSelector:@selector(registerUserNotificationSettings:)])
+    {
+        UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:(UIUserNotificationTypeBadge | UIUserNotificationTypeSound | UIUserNotificationTypeAlert) categories:nil];
+        [[UIApplication sharedApplication] registerUserNotificationSettings:settings];
+        [[UIApplication sharedApplication] registerForRemoteNotifications];
+        
+    } else
+    {
+        [[UIApplication sharedApplication] registerForRemoteNotificationTypes: (UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert)];
+    }
 ```
 
 
@@ -169,8 +185,6 @@ to the method
 fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler
 
 ```
-
-
 
 
 ### Send us your Push certificate for testing
